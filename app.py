@@ -9,6 +9,16 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/info')
+def info():
+    return render_template("info.html")
+
+
+@app.route('/contacts')
+def contacts():
+    return render_template("contacts.html")
+
+
 @app.route('/authorization', methods=['GET', 'POST'])
 def form_authorization():
    if request.method == 'POST':
@@ -59,4 +69,5 @@ def form_registration():
 
 
 if __name__ == "__main__":
- app.run()
+ # app.run(debug=True)
+    app.run()

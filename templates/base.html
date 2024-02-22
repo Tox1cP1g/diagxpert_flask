@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}Приложение Flask{% endblock %}</title>
+    <meta charset="utf-8" />
+    <title>{% block title %}Default title{% endblock title %}</title>
 </head>
 <body>
-    <h1>{{h1}}</h1>
+    <a href="/">Главная</a> | <a href="/info">О сайте</a> | <a href="/contacts">Контакты</a> | <a href="/authorization">Авторизация</a> | <a href="/registration">Регистрация</a>
+    <h1>{% block header %}{% endblock header %}</h1>
+    <div>{% block content%}{% endblock content %}</div>
+    <div>VKLTD, 2024. All rights reserved.</div>
 </body>
 </html>
