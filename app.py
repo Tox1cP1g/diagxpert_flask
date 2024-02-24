@@ -57,9 +57,8 @@ def form_registration():
 
 
        cursor_db.execute(sql_insert)
-
+       db_lp.commit()
        cursor_db.close()
-
        db_lp.commit()
        db_lp.close()
 
