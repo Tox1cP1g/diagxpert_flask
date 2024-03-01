@@ -58,8 +58,8 @@ def form_registration():
 
        cursor_db.execute(sql_insert)
        db_lp.commit()
-       cursor_db.close()
        db_lp.commit()
+       cursor_db.close()
        db_lp.close()
 
        return render_template('successfulregis.html')
